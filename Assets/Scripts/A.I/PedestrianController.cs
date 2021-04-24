@@ -13,7 +13,6 @@ public class PedestrianController : MonoBehaviour
     public Vector3 destination;
     public string[] unavoidableObstacles = { "Vehicle" };
     public string[] avoidableObstacles = { "Pedestrian" };
-    public float stuckfixPeriod;
    
 
     [Header("info")]
@@ -37,11 +36,7 @@ public class PedestrianController : MonoBehaviour
     [HideInInspector]
     public float stopDistance ;
 
-    //fix hard stuck
-    [HideInInspector]
-    public Vector3 previousPos;
-    [HideInInspector]
-    public float checkStuckCooldown;
+ 
 
     // Start is called before the first frame update
     public virtual void OnEnable()
@@ -61,8 +56,7 @@ public class PedestrianController : MonoBehaviour
         stopDistance = 0.2f;
         obstacleCheckRadius = GetComponent<BoxCollider>().size.x*1.2f;
         nodes = path.corners;
-        previousPos = transform.position;
-        checkStuckCooldown = stuckfixPeriod;
+
         isBraking = false;
     }
 
@@ -235,11 +229,4 @@ public class PedestrianController : MonoBehaviour
 
     }
 
-    public void StuckFix()
-    {
-        if(checkStuckCooldown == 0)
-        {
-
-        }
-    }
 }

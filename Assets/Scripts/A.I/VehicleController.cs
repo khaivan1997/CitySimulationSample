@@ -16,7 +16,7 @@ public class VehicleController : PedestrianController
     {
         base.OnEnable();
         
-        this.minimumVelocityMagnitude = 3f;
+        this.minimumVelocityMagnitude = 4f;
         maxstopTorque = agent.speed;
     }
 
@@ -29,42 +29,25 @@ public class VehicleController : PedestrianController
     {
         Vector3 velocity = destination - transform.position;
         float steering;
-        if(avoidMultiplier != 0)
+        float motor = agent.speed;
+        if (avoidMultiplier != 0)
         {
-            Debug.Log("avoid, "+avoidMultiplier);
             steering = maxSteeringAngle * avoidMultiplier;
+            motor = motor / 2f;
         }
         else
         {
-            Debug.Log("noavoid");
-            steering = Mathf.Abs(Mathf.Sin(Vector3.Angle(transform.forward, velocity) * Mathf.Deg2Rad));
+            Vector3 local = transform.InverseTransformPoint(destination);
+            steering = Mathf.Abs(local.x /local.magnitude);
             steering = isObjectontheRight(destination) ? steering : -steering;
             steering = maxSteeringAngle * steering;
         }
             
         
-        float motor = agent.speed;//velocity.magnitude > agent.speed ? agent.speed : velocity.magnitude;
+       //velocity.magnitude > agent.speed ? agent.speed : velocity.magnitude;
         //motor = Mathf.Abs(steering)>maxSteeringAngle/3 ? motor/1.5f :motor;// velocity.magnitude > maxMotorTorque ? maxMotorTorque : velocity.magnitude;
         //Debug.Log(" destination: "+ path.corners[subpathIndex]+" direction:" + velocity + " at:" + motor + " steerAngle: " + steering);
-        foreach (AxleInfo axle in axleInfos)
-        {
-            if (axle.steering )
-            {
-                float currentSteering = axle.leftWheelCollider.steerAngle;
-                axle.leftWheelCollider.steerAngle = Mathf.Lerp(currentSteering, steering, Time.fixedDeltaTime*maxSteeringAngle);
-                axle.rightWheelCollider.steerAngle = Mathf.Lerp(currentSteering, steering, Time.fixedDeltaTime * maxSteeringAngle);
-            }
-            if (axle.motor)
-            {
-                float currentSpeed = 2 * Mathf.PI * axle.leftWheelCollider.radius * axle.leftWheelCollider.rpm * 60 / 1000; 
-                if(currentSpeed < maxSpeed)
-                {
-                    axle.leftWheelCollider.motorTorque = motor;
-                    axle.rightWheelCollider.motorTorque = motor;
-                }
-            }
-            ApplyLocalPositionToVisuals(axle);
-        }
+        moveCar(motor, steering);
         if (isBraking)
         {
             deceleration(maxstopTorque / 2f);
@@ -112,6 +95,30 @@ public class VehicleController : PedestrianController
         Transform rightWheelMesh = axleInfo.rightWheelCollider.transform.GetChild(0);
         rightWheelMesh.transform.position = position;
         rightWheelMesh.transform.rotation = axleInfo.rightMeshDefaultRotation* rotation;
+    }
+
+    public void moveCar(float motor, float steering)
+    {
+        float angleTurnRate = Time.fixedDeltaTime * 30f;
+        foreach (AxleInfo axle in axleInfos)
+        {
+            if (axle.steering)
+            {
+                float currentSteering = axle.leftWheelCollider.steerAngle;
+                axle.leftWheelCollider.steerAngle = Mathf.Lerp(currentSteering, steering, angleTurnRate);
+                axle.rightWheelCollider.steerAngle = Mathf.Lerp(currentSteering, steering, angleTurnRate);
+            }
+            if (axle.motor)
+            {
+                float currentSpeed = 2 * Mathf.PI * axle.leftWheelCollider.radius * axle.leftWheelCollider.rpm * 60f / 3600;
+                if (currentSpeed < maxSpeed)
+                {
+                    axle.leftWheelCollider.motorTorque = motor;
+                    axle.rightWheelCollider.motorTorque = motor;
+                }
+            }
+            ApplyLocalPositionToVisuals(axle);
+        }
     }
 }
 
