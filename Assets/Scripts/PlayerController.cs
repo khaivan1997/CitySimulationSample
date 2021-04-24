@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     [ReadOnly]
     public float movementSpeed = 2.0f;
     [ReadOnly]
-    public float rotationSpeed = 1000.0f;
+    public float rotationSpeed = 200.0f;
    
 
    
@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("speedHorizontal", 0);
         }
         //moving
-        rigidbody.velocity = movementVelocity*100f;
+        rigidbody.velocity = movementVelocity*10f;
 
     }
 }

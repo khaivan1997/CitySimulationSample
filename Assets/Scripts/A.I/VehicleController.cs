@@ -16,7 +16,7 @@ public class VehicleController : PedestrianController
     {
         base.OnEnable();
         
-        this.minimumVelocityMagnitude = 4f;
+        this.minimumVelocityMagnitude = 3f;
         maxstopTorque = agent.speed;
     }
 
