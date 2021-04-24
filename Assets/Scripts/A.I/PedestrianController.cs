@@ -57,7 +57,7 @@ public class PedestrianController : MonoBehaviour
         //foreach (Vector3 v in path.corners)
           //  Debug.Log(this.gameObject.tag+": "+v);
         subpathIndex = 0;
-        minimumVelocityMagnitude = 1f;
+        minimumVelocityMagnitude = 0.6f;
         stopDistance = 0.2f;
         obstacleCheckRadius = GetComponent<BoxCollider>().size.x*1.2f;
         nodes = path.corners;
@@ -157,13 +157,13 @@ public class PedestrianController : MonoBehaviour
 
     public bool havingUnavoidableObstacle()
     {
-        float maxDistance = agent.radius*2;
+        float maxDistance = agent.radius;
         Collider[] colliders = Physics.OverlapSphere(transform.position, agent.radius * 2, LayerMask.GetMask(unavoidableObstacles));
 
 
         foreach (Collider collider in colliders)
         {
-            if (isObjectinFront(collider.transform.position - this.transform.position,15f))
+            if (isObjectinFront(collider.transform.position,10f))
                 return true;
         }
         return false;
@@ -212,7 +212,8 @@ public class PedestrianController : MonoBehaviour
     {
         Vector3 distanceVector = other - transform.position;
         //Debug.Log("mag:"+distanceVector.magnitude);
-        if ( Vector3.Dot(transform.forward, distanceVector) > 0)
+        float result0 = Vector3.Dot(transform.forward, distanceVector);
+        if ( result0 > 0 || Mathf.Approximately(result0, 0))
         {
             float result = Vector3.Angle(transform.forward, distanceVector);
             if (Mathf.Approximately(result, viewPort))
