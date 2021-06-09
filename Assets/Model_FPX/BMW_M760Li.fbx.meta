@@ -1,0 +1,287 @@
+fileFormatVersion: 2
+guid: fdd00c7c0bcb29b40a3428a3bcd30d44
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ANGEL_EYES_BACK_CHROME
+    second: {fileID: 2100000, guid: 237a71fe15d45ec4288eda7005ba6544, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ANGEL_EYES_BLUE
+    second: {fileID: 2100000, guid: 10ace680d48919b448145cbc9cdeeaac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ANGEL_EYES_GLASS
+    second: {fileID: 2100000, guid: 99f17e34b2a57554c84dd619dff2cee0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BACK_ELEMENT
+    second: {fileID: 2100000, guid: 4cc94356a48a6ba49b0eb08bc3c780f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BLACK GLOSSY
+    second: {fileID: 2100000, guid: b00c9b3e51e1f454fa6fbe16817a2b7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BLACK Matte_NEW
+    second: {fileID: 2100000, guid: 145d6bb54150c6b42b504b6412ec999e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BLACK_GLASS
+    second: {fileID: 2100000, guid: e8c9c77438e588344b49d3a0c8862ef4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BOLTS
+    second: {fileID: 2100000, guid: 44d642390b3f0fa428fd3a4ae993ac02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CARBON ROOF
+    second: {fileID: 2100000, guid: cb382c4774ca5dd4880c9c066f644d90, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CARBON SIDE MIRROR
+    second: {fileID: 2100000, guid: 15ff407cd030d9545a2eb646938dff77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CAR_BODY_METALLIC
+    second: {fileID: 2100000, guid: 961dbd3bca277bd40a996a561cc2795d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CAR_EMBLEM
+    second: {fileID: 2100000, guid: 286e97fe5b77d3e45b1a82207b6fe067, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CHROME BLACK
+    second: {fileID: 2100000, guid: 7cfaf4adfd8abe34ea3722f980e8c2ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSER_REAR
+    second: {fileID: 2100000, guid: ad167e2f19418714daef36f1e84c2a1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSER_REAR_EXHAUST
+    second: {fileID: 2100000, guid: 7aeb03a0dc5ae2e44bbb7a89b5dd549f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMISSION_ANGEL_EYES
+    second: {fileID: 2100000, guid: 9b1f0bd04cd3c5d4081ff1a97e92d79a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXHAUST_PIPES
+    second: {fileID: 2100000, guid: d69309c3a5bd62e4fb54ac0ba03a40bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FIN_SHARK
+    second: {fileID: 2100000, guid: 0fa01725c05aa0143bc9a70ee9aa244a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FRONT_BUMPER_ELEMENT
+    second: {fileID: 2100000, guid: 563c0cc03c484084a8d8afacb2b387fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HEADLIGHTS_DETAILS
+    second: {fileID: 2100000, guid: f83a854d0c670294abfa777f9f7e9bdf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HEADLIGHTS_GLASS_FOR_EVEE
+    second: {fileID: 2100000, guid: e5555f7bb8822854189bd355a7cce527, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: KIDNEYS_1
+    second: {fileID: 2100000, guid: 67db9494de2a53b42950ec819c8e1d28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: KIDNEYS_2
+    second: {fileID: 2100000, guid: 811c0320c13364d4fad1aea8fa017b9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: KIDNEYS_3
+    second: {fileID: 2100000, guid: 6455a2fdde112d34fb1c224c700cddc9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MATTE_
+    second: {fileID: 2100000, guid: 66463c211b57ed5449177a11945a5b57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RIMS
+    second: {fileID: 2100000, guid: ec1c59eb23048ea469ed76557a46f9b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SPOILER_REAR
+    second: {fileID: 2100000, guid: 004158a305994c04ba3c8ab7c9bb115a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TIRES
+    second: {fileID: 2100000, guid: 7e08185655863df4595ac48de78b2094, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: UNDER_BODY
+    second: {fileID: 2100000, guid: f5431ea8d0272044e9c282b938cb292a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: brake disc
+    second: {fileID: 2100000, guid: 8aa512fc13e865c4b985ab59449a66c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m3_badge_blue_1
+    second: {fileID: 2100000, guid: 237f0c83988a0e943940217d91a3fa64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m3_badge_chrome
+    second: {fileID: 2100000, guid: c79a3737cf424e44a8b063dde09b14b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m3_badge_dark_blue
+    second: {fileID: 2100000, guid: 2abb50613235f374682e899db40e5397, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m3_badge_red
+    second: {fileID: 2100000, guid: 6dd3c57bd8c59ed498c68085a60e603e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plate number
+    second: {fileID: 2100000, guid: abb6e729794aaaa4ca265aa1951ce4d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tail1
+    second: {fileID: 2100000, guid: f02b773e55035c2458cd3498440388f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tail_inside_red
+    second: {fileID: 2100000, guid: 017f9bddb1b517c43b6c26a260205014, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
